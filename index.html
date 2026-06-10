@@ -3,20 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sumanth — Full-Stack Developer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<!-- AMBIENT ORBS --><!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sumanth — Full-Stack Developer</title>
+<title>Sumanth — Web Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
@@ -25,496 +12,6 @@
 <body>
 
 <!-- AMBIENT ORBS -->
-<div class="orb orb-1"></div>
-<div class="orb orb-2"></div>
-<div class="orb orb-3"></div>
-
-<!-- NAV -->
-<nav>
-  <div class="logo-mark">Sumanth</div>
-  <ul class="nav-links">
-    <li><a href="#" class="active" onclick="goTo('home',this)">Home</a></li>
-    <li><a href="#" onclick="goTo('about',this)">About</a></li>
-    <li><a href="#" onclick="goTo('skills',this)">Skills & Projects</a></li>
-    <li><a href="#" onclick="goTo('contact',this)">Contact</a></li>
-  </ul>
-  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<!-- MOBILE NAV -->
-<div class="mobile-nav" id="mobileNav">
-  <a href="#" class="active" onclick="goTo('home',this);closeMenu()">Home</a>
-  <a href="#" onclick="goTo('about',this);closeMenu()">About</a>
-  <a href="#" onclick="goTo('skills',this);closeMenu()">Skills & Projects</a>
-  <a href="#" onclick="goTo('contact',this);closeMenu()">Contact</a>
-</div>
-
-<!-- ══════════════ HOME PAGE ══════════════ -->
-<div class="page active" id="page-home">
-
-  <div class="hero-wrap">
-    <div class="hero-content">
-      <div class="hero-eyebrow">
-        <span></span>
-        Available for projects
-      </div>
-      <h1 class="hero-title">
-        Hi, I'm
-        <span class="accent-name">Sumanth</span>
-      </h1>
-      <p class="hero-role">Full-Stack Developer &amp; UI Craftsman</p>
-      <p class="hero-desc">
-        I build beautiful, responsive websites with modern design and clean code.
-        Turning ideas into polished digital experiences — one pixel at a time.
-      </p>
-      <div class="btn-group">
-        <a href="#" class="btn btn-primary" onclick="goTo('skills',document.querySelectorAll('.nav-links a')[2])">View My Work →</a>
-        <a href="#" class="btn btn-outline" onclick="goTo('contact',document.querySelectorAll('.nav-links a')[3])">Get In Touch</a>
-      </div>
-    </div>
-
-    <div class="hero-visual">
-      <div class="hero-card">
-        <div class="hcard-avatar" style="width:80px;height:80px;border-radius:20px;overflow:hidden;padding:0;">
-          <img src="profile.jpg" alt="Sumanth" style="width:100%;height:100%;object-fit:cover;object-position:top;">
-        </div>
-        <div class="hcard-name">Bandaru Sai Sumanth</div>
-        <div class="hcard-role">Full-Stack Developer</div>
-        <div class="hcard-stats">
-          <div class="hstat">
-            <div class="hstat-n">5+</div>
-            <div class="hstat-l">Projects</div>
-          </div>
-          <div class="hstat">
-            <div class="hstat-n">1</div>
-            <div class="hstat-l">Year of Internship Experience</div>
-          </div>
-          <div class="hstat">
-            <div class="hstat-n">100%</div>
-            <div class="hstat-l">Dedication</div>
-          </div>
-        </div>
-        <div class="hcard-skills" style="margin-top:20px">
-          <span class="skill-chip">HTML5</span>
-          <span class="skill-chip">CSS3</span>
-          <span class="skill-chip">JavaScript</span>
-          <span class="skill-chip">Python</span>
-          <span class="skill-chip">API Integration</span>
-          <span class="skill-chip">Git & GitHub</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- WHAT I DO -->
-  <div class="features-strip">
-    <div class="strip-label">What I Do</div>
-    <div class="features-grid">
-      <div class="feat">
-        <div class="feat-num">01</div>
-        <div class="feat-icon">💻</div>
-        <h3>Web Design</h3>
-        <p>Crafting stunning, modern interfaces with thoughtful UI/UX design principles that delight users.</p>
-      </div>
-      <div class="feat">
-        <div class="feat-num">02</div>
-        <div class="feat-icon">🎨</div>
-        <h3>Frontend Dev</h3>
-        <p>Building responsive, interactive websites using HTML, CSS, and JavaScript with clean, maintainable code.</p>
-      </div>
-      <div class="feat">
-        <div class="feat-num">03</div>
-        <div class="feat-icon">⚡</div>
-        <h3>Performance</h3>
-        <p>Optimizing for speed and ensuring excellent performance across all devices and screen sizes.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- SKILLS PREVIEW + CTA -->
-  <div class="skills-bar-wrap">
-    <div class="skills-bar-cta">
-      <h2>Ready to Start<br>a Project?</h2>
-      <p>Let's work together to create something amazing. I bring both technical skill and creative vision to every project.</p>
-      <a href="#" class="btn btn-primary" onclick="goTo('skills',document.querySelectorAll('.nav-links a')[2])">Explore My Work →</a>
-    </div>
-    <div class="skill-bars">
-      <div class="sbar-item">
-        <div class="sbar-top"><span class="sbar-name">HTML5</span><span class="sbar-pct">95%</span></div>
-        <div class="sbar-track"><div class="sbar-fill" style="width:95%"></div></div>
-      </div>
-      <div class="sbar-item">
-        <div class="sbar-top"><span class="sbar-name">CSS3</span><span class="sbar-pct">90%</span></div>
-        <div class="sbar-track"><div class="sbar-fill" style="width:90%;animation-delay:.1s"></div></div>
-      </div>
-      <div class="sbar-item">
-        <div class="sbar-top"><span class="sbar-name">JavaScript</span><span class="sbar-pct">85%</span></div>
-        <div class="sbar-track"><div class="sbar-fill" style="width:85%;animation-delay:.2s"></div></div>
-      </div>
-      <div class="sbar-item">
-        <div class="sbar-top"><span class="sbar-name">Python</span><span class="sbar-pct">80%</span></div>
-        <div class="sbar-track"><div class="sbar-fill" style="width:80%;animation-delay:.3s"></div></div>
-      </div>
-      <div class="sbar-item">
-        <div class="sbar-top"><span class="sbar-name">API Integration</span><span class="sbar-pct">78%</span></div>
-        <div class="sbar-track"><div class="sbar-fill" style="width:78%;animation-delay:.4s"></div></div>
-      </div>
-      <div class="sbar-item">
-        <div class="sbar-top"><span class="sbar-name">Responsive Design</span><span class="sbar-pct">92%</span></div>
-        <div class="sbar-track"><div class="sbar-fill" style="width:92%;animation-delay:.5s"></div></div>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="footer-left"><p>© 2026 <span>Bandaru Sai Sumanth</span>. All rights reserved.</p></div>
-    <div class="footer-links">
-      <a href="https://www.linkedin.com/in/sai-sumanth-949761352" target="_blank">LinkedIn</a>
-      <a href="https://github.com/SaiSumanthNaidu/" target="_blank">GitHub</a>
-    </div>
-  </footer>
-</div>
-
-
-<!-- ══════════════ ABOUT PAGE ══════════════ -->
-<div class="page" id="page-about">
-  <div class="section-wrap">
-    <div class="sec-header">
-      <div class="sec-tag">About Me</div>
-      <h1 class="sec-title">Hello,<br>I'm Sumanth</h1>
-      <p class="sec-sub">A passionate web developer with a focus on beautiful, responsive, and user-friendly websites.</p>
-    </div>
-
-    <div class="about-grid">
-      <div class="about-bio">
-        <div style="width:100%;height:280px;border-radius:16px;overflow:hidden;margin-bottom:32px;">
-          <img src="profile.jpg" alt="Sumanth" style="width:100%;height:100%;object-fit:cover;object-position:top center;">
-        </div>
-        <h2>My Story</h2>
-       <p>I'm Bandaru Sai Sumanth, a passionate web developer and programmer who loves turning ideas into real, working products. My journey began with curiosity about how websites and software are built — and that curiosity quickly grew into a full-on passion.</p>
-        <p>I started with the fundamentals — HTML, CSS, and JavaScript — and built my <strong>Personal Portfolio</strong> to showcase my work. From there I pushed myself further, creating a <strong>Resume Builder Pro</strong> that lets users generate professional resumes with a live preview, and <strong>WeatherSphere Pro</strong>, a real-time weather app powered by live API data.</p>
-        <p>On the backend side, I built a <strong>Python Scientific Calculator with History</strong>, which deepened my understanding of logic, math operations, and clean code structure. Each project taught me something new and pushed me to grow as a developer.</p>
-        <p>I believe in learning by building. Every line of code I write brings me closer to creating products that are not just functional, but genuinely useful and beautiful.</p>
-        <div style="margin-top:32px">
-          <a href="#" class="btn btn-primary" onclick="goTo('contact',document.querySelectorAll('.nav-links a')[3])">Let's Work Together →</a>
-        </div>
-      </div>
-
-      <div class="about-right">
-        <div class="stat-grid">
-          <div class="stat-block">
-            <div class="stat-big">5+</div>
-            <div class="stat-lbl">Projects Completed</div>
-          </div>
-          <div class="stat-block">
-            <div class="stat-big">1</div>
-            <div class="stat-lbl">Year of Internship Experience</div>
-          </div>
-          <div class="stat-block" style="grid-column:1/-1">
-            <div class="stat-big">100%</div>
-            <div class="stat-lbl">Dedication to Every Project</div>
-          </div>
-        </div>
-
-        <div class="traits-grid">
-          <div class="trait">
-            <div class="trait-icon">🎯</div>
-            <h4>Goal-Oriented</h4>
-            <p>Focused on understanding your needs and delivering solutions that exceed expectations.</p>
-          </div>
-          <div class="trait">
-            <div class="trait-icon">💡</div>
-            <h4>Creative Thinking</h4>
-            <p>Fresh ideas and innovative solutions to help your project stand out.</p>
-          </div>
-          <div class="trait">
-            <div class="trait-icon">🚀</div>
-            <h4>Fast Learner</h4>
-            <p>Quick to adapt to new technologies and best practices in web development.</p>
-          </div>
-          <div class="trait">
-            <div class="trait-icon">🤝</div>
-            <h4>Collaborative</h4>
-            <p>Works effectively with teams and clients to bring visions to reality.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="cta-band">
-    <div class="cta-text">
-      <h2>Let's Work Together</h2>
-      <p>Ready to collaborate on your next project? Let's create something amazing!</p>
-    </div>
-    <a href="#" class="btn-white" onclick="goTo('contact',document.querySelectorAll('.nav-links a')[3])">Get In Touch →</a>
-  </div>
-
-  <footer>
-    <div class="footer-left"><p>© 2026 <span>Sumanth's Portfolio</span>. All rights reserved.</p></div>
-    <div class="footer-links">
-       <a  href="https://www.linkedin.com/in/sai-sumanth-949761352" target="_blank">LinkedIn</a>
-      <a href="https://github.com/SaiSumanthNaidu/" target="_blank">GitHub</a>
-    </div>
-  </footer>
-</div>
-
-
-<!-- ══════════════ SKILLS & PROJECTS PAGE ══════════════ -->
-<div class="page" id="page-skills">
-  <div class="section-wrap">
-    <div class="sec-header">
-      <div class="sec-tag">My Expertise</div>
-      <h1 class="sec-title">Skills &<br>Projects</h1>
-      <p class="sec-sub">Technical proficiencies and featured work from my development journey.</p>
-    </div>
-
-    <!-- SKILLS -->
-    <div class="skills-full-grid">
-      <div class="skill-tile">
-        <h3>HTML5</h3>
-        <p>Semantic markup, accessibility, and modern HTML practices — used across Portfolio and Resume Builder Pro</p>
-        <div class="sbar-track"><div class="sbar-fill" style="width:95%"></div></div>
-        <div class="skill-pct">95%</div>
-      </div>
-      <div class="skill-tile">
-        <h3>CSS3</h3>
-        <p>Advanced styling, animations, dark themes, and modern CSS techniques — applied in all web projects</p>
-        <div class="sbar-track"><div class="sbar-fill" style="width:90%;animation-delay:.1s"></div></div>
-        <div class="skill-pct">90%</div>
-      </div>
-      <div class="skill-tile">
-        <h3>JavaScript</h3>
-        <p>DOM manipulation, real-time interactions, and API calls — core of WeatherSphere Pro and Resume Builder</p>
-        <div class="sbar-track"><div class="sbar-fill" style="width:85%;animation-delay:.2s"></div></div>
-        <div class="skill-pct">85%</div>
-      </div>
-      <div class="skill-tile">
-        <h3>Python</h3>
-        <p>Scientific computing, math operations, and CLI development — built the Scientific Calculator with History</p>
-        <div class="sbar-track"><div class="sbar-fill" style="width:80%;animation-delay:.3s"></div></div>
-        <div class="skill-pct">80%</div>
-      </div>
-      <div class="skill-tile">
-        <h3>API Integration</h3>
-        <p>Fetching and handling real-time data from external APIs — used in WeatherSphere Pro for live weather data</p>
-        <div class="sbar-track"><div class="sbar-fill" style="width:78%;animation-delay:.4s"></div></div>
-        <div class="skill-pct">78%</div>
-      </div>
-      <div class="skill-tile">
-        <h3>Responsive Design</h3>
-        <p>Mobile-first layouts and cross-device compatibility — implemented across all 4 projects</p>
-        <div class="sbar-track"><div class="sbar-fill" style="width:92%;animation-delay:.5s"></div></div>
-        <div class="skill-pct">92%</div>
-      </div>
-      <div class="skill-tile">
-        <h3>UI/UX Design</h3>
-        <p>Clean, intuitive interfaces with great user experience — from Portfolio dark theme to Resume Builder live preview</p>
-        <div class="sbar-track"><div class="sbar-fill" style="width:82%;animation-delay:.6s"></div></div>
-        <div class="skill-pct">82%</div>
-      </div>
-      <div class="skill-tile">
-        <h3>Git & GitHub</h3>
-        <p>Version control, repo management, and GitHub Pages deployment — used to host and maintain all projects</p>
-        <div class="sbar-track"><div class="sbar-fill" style="width:75%;animation-delay:.7s"></div></div>
-        <div class="skill-pct">75%</div>
-      </div>
-    </div>
-
-    <!-- PROJECTS -->
-    <h2 class="projects-heading">Featured Projects</h2>
-    <div class="projects-full-grid">
-
-      <!-- Project 1: My Portfolio -->
-      <div class="proj-card">
-        <div class="proj-badge-wrap">
-          <span class="proj-badge">Web Design</span>
-          <span class="proj-arrow">↗</span>
-        </div>
-        <h3>My Portfolio</h3>
-        <p>A fully responsive personal portfolio website built with HTML, CSS, and JavaScript. Features a modern dark theme, smooth page transitions, animated skill bars, and a multi-section layout covering About, Skills, Projects, and Contact.</p>
-        <div class="proj-tags">
-          <span class="proj-tag">HTML5</span>
-          <span class="proj-tag">CSS3</span>
-          <span class="proj-tag">JavaScript</span>
-          <span class="proj-tag">Responsive</span>
-        </div>
-        <a href="https://github.com/SaiSumanthNaidu/My-Portfolio" target="_blank" class="proj-link">View on GitHub →</a>
-      </div>
-
-      <!-- Project 2: Scientific Calculator -->
-      <div class="proj-card">
-        <div class="proj-badge-wrap">
-          <span class="proj-badge">Python</span>
-          <span class="proj-arrow">↗</span>
-        </div>
-        <h3>Python Scientific Calculator</h3>
-        <p>A feature-rich scientific calculator built with Python, supporting advanced mathematical operations like trigonometry, logarithms, and exponents. Includes a full calculation history so you can track and revisit past results.</p>
-        <div class="proj-tags">
-          <span class="proj-tag">Python</span>
-          <span class="proj-tag">CLI</span>
-          <span class="proj-tag">Math</span>
-          <span class="proj-tag">History</span>
-        </div>
-        <a href="https://github.com/SaiSumanthNaidu/python-scientific-calculator-with-history" target="_blank" class="proj-link">View on GitHub →</a>
-      </div>
-
-      <!-- Project 3: Resume Builder Pro -->
-      <div class="proj-card">
-        <div class="proj-badge-wrap">
-          <span class="proj-badge">Web App</span>
-          <span class="proj-arrow">↗</span>
-        </div>
-        <h3>Resume Builder Pro</h3>
-        <p>A professional resume builder web application that lets users create, customize, and export polished resumes. Features intuitive form inputs, live preview, and a clean layout that produces job-ready documents in minutes.</p>
-        <div class="proj-tags">
-          <span class="proj-tag">HTML5</span>
-          <span class="proj-tag">CSS3</span>
-          <span class="proj-tag">JavaScript</span>
-          <span class="proj-tag">PDF Export</span>
-        </div>
-        <a href="https://github.com/SaiSumanthNaidu/resume-builder-pro" target="_blank" class="proj-link">View on GitHub →</a>
-      </div>
-
-      <!-- Project 4: WeatherSphere Pro -->
-      <div class="proj-card">
-        <div class="proj-badge-wrap">
-          <span class="proj-badge">API Integration</span>
-          <span class="proj-arrow">↗</span>
-        </div>
-        <h3>WeatherSphere Pro</h3>
-        <p>A dynamic weather application that fetches real-time data from a weather API and presents it through a beautiful, responsive interface. Includes current conditions, forecasts, location search, and visually rich weather displays.</p>
-        <div class="proj-tags">
-          <span class="proj-tag">JavaScript</span>
-          <span class="proj-tag">Weather API</span>
-          <span class="proj-tag">Responsive</span>
-          <span class="proj-tag">UI/UX</span>
-        </div>
-        <a href="https://github.com/SaiSumanthNaidu/WeatherSphere-Pro" target="_blank" class="proj-link">View on GitHub →</a>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="cta-band">
-    <div class="cta-text">
-      <h2>Have an Interesting Project?</h2>
-      <p>I'm always open to discussing new projects and creative ideas.</p>
-    </div>
-    <a href="#" class="btn-white" onclick="goTo('contact',document.querySelectorAll('.nav-links a')[3])">Start a Project →</a>
-  </div>
-
-  <footer>
-    <div class="footer-left"><p>© 2026 <span>Sumanth's Portfolio</span>. All rights reserved.</p></div>
-    <div class="footer-links">
-       <a  href="https://www.linkedin.com/in/sai-sumanth-949761352" target="_blank">LinkedIn</a>
-      <a href="https://github.com/SaiSumanthNaidu/" target="_blank">GitHub</a>
-    </div>
-  </footer>
-</div>
-
-
-<!-- ══════════════ CONTACT PAGE ══════════════ -->
-<div class="page" id="page-contact">
-  <div class="section-wrap">
-    <div class="sec-header">
-      <div class="sec-tag">Contact</div>
-      <h1 class="sec-title">Let's Connect</h1>
-      <p class="sec-sub">Have a project in mind? Want to collaborate? Feel free to reach out — I'd love to hear from you.</p>
-    </div>
-
-    <div class="contact-grid">
-      <div class="contact-info-panel">
-        <h2>Get In Touch</h2>
-        <p>I'm always open to new opportunities, collaborations, and interesting conversations. Reach out through any of the channels below.</p>
-
-        <div class="cmethod">
-          <div class="cmethod-icon">📧</div>
-          <div class="cmethod-info">
-            <h4>Email</h4>
-            <a href="mailto:bandarusaisumanth@gmail.com">bandarusaisumanth@gmail.com</a>
-          </div>
-        </div>
-        <div class="cmethod">
-          <div class="cmethod-icon">📱</div>
-          <div class="cmethod-info">
-            <h4>Phone</h4>
-            <a href="tel:+919154912059">+91 9154912059</a>
-          </div>
-        </div>
-        <div class="cmethod">
-          <div class="cmethod-icon">📍</div>
-          <div class="cmethod-info">
-            <h4>Location</h4>
-            <p>Hyderabad, India</p>
-          </div>
-        </div>
-        <div class="cmethod">
-          <div class="cmethod-icon">🔗</div>
-          <div class="cmethod-info">
-            <h4>Social Media</h4>
-            <div class="social-row">
-              <a  href="https://www.linkedin.com/in/sai-sumanth-949761352" target="_blank">LinkedIn</a>
-              <a href="https://github.com/SaiSumanthNaidu/" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="resp-note">
-          <h4>⚡ Quick Response</h4>
-          <p>I typically respond within <strong>24–48 hours</strong>. Looking forward to working with you!</p>
-        </div>
-      </div>
-
-      <div class="contact-form-panel">
-        <h3>Send Me a Message</h3>
-        <div class="form-row">
-          <div class="fg">
-            <label>Name *</label>
-            <input type="text" placeholder="Your Name">
-          </div>
-          <div class="fg">
-            <label>Email *</label>
-            <input type="email" placeholder="you@email.com">
-          </div>
-        </div>
-        <div class="fg">
-          <label>Subject *</label>
-          <input type="text" placeholder="Project Inquiry">
-        </div>
-        <div class="fg">
-          <label>Message *</label>
-          <textarea placeholder="Tell me about your project..."></textarea>
-        </div>
-        <div class="fg">
-          <label>Budget (Optional)</label>
-          <select>
-            <option value="">Select budget range</option>
-            <option>$500 – $1,000</option>
-            <option>$1,000 – $5,000</option>
-            <option>$5,000 – $10,000</option>
-            <option>$10,000+</option>
-          </select>
-        </div>
-        <button class="submit-btn" onclick="handleSubmit(this)">Send Message →</button>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="footer-left"><p>© 2026 <span>Sumanth's Portfolio</span>. All rights reserved.</p></div>
-    <div class="footer-links">
-      <a href="https://www.linkedin.com/in/sai-sumanth-949761352" target="_blank">LinkedIn</a>
-      <a href="https://github.com/SaiSumanthNaidu/" target="_blank">GitHub</a>
-    </div>
-  </footer>
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
 <div class="orb orb-1"></div>
 <div class="orb orb-2"></div>
 <div class="orb orb-3"></div>
@@ -567,7 +64,9 @@
 
     <div class="hero-visual">
       <div class="hero-card">
-        <div class="hcard-avatar">S</div>
+        <div class="hcard-avatar" style="width:80px;height:80px;border-radius:20px;overflow:hidden;padding:0;">
+          <img src="profile.jpg" alt="Sumanth" style="width:100%;height:100%;object-fit:cover;object-position:top;">
+        </div>
         <div class="hcard-name">Bandaru Sai Sumanth</div>
         <div class="hcard-role">Web Developer</div>
         <div class="hcard-stats">
@@ -660,8 +159,8 @@
     <div class="footer-left"><p>© 2026 <span>Bandaru Sai Sumanth</span>. All rights reserved.</p></div>
     <div class="footer-links">
       <a href="https://twitter.com" target="_blank">Twitter</a>
-      <a href="https://www.linkedin.com/in/sai-sumanth-949761352" target="_blank" class="social-btn">LinkedIn</a>
-      <a href="https://github.com/SaiSumanthNaidu" target="_blank" class="social-btn">GitHub</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
     </div>
   </footer>
 </div>
@@ -678,10 +177,14 @@
 
     <div class="about-grid">
       <div class="about-bio">
+        <div style="width:100%;height:280px;border-radius:16px;overflow:hidden;margin-bottom:32px;">
+          <img src="profile.jpg" alt="Sumanth" style="width:100%;height:100%;object-fit:cover;object-position:top center;">
+        </div>
         <h2>My Story</h2>
-        <p>I'm a passionate web developer with a focus on creating beautiful, responsive, and user-friendly websites. With expertise in HTML, CSS, and JavaScript, I transform ideas into stunning digital experiences.</p>
-        <p>My journey in web development started with a curiosity about how websites work, and it has evolved into a deep passion for clean code, modern design principles, and creating solutions that make a difference.</p>
-        <p>I believe in continuous learning and staying updated with the latest web technologies and design trends. When I'm not coding, you can find me exploring new design patterns, contributing to open-source projects, or working on exciting portfolio projects.</p>
+        <p>I'm Bandaru Sai Sumanth, a passionate web developer and programmer who loves turning ideas into real, working products. My journey began with curiosity about how websites and software are built — and that curiosity quickly grew into a full-on passion.</p>
+        <p>I started with the fundamentals — HTML, CSS, and JavaScript — and built my <strong>Personal Portfolio</strong> to showcase my work. From there I pushed myself further, creating a <strong>Resume Builder Pro</strong> that lets users generate professional resumes with a live preview, and <strong>WeatherSphere Pro</strong>, a real-time weather app powered by live API data.</p>
+        <p>On the backend side, I built a <strong>Python Scientific Calculator with History</strong>, which deepened my understanding of logic, math operations, and clean code structure. Each project taught me something new and pushed me to grow as a developer.</p>
+        <p>I believe in learning by building. Every line of code I write brings me closer to creating products that are not just functional, but genuinely useful and beautiful.</p>
         <div style="margin-top:32px">
           <a href="#" class="btn btn-primary" onclick="goTo('contact',document.querySelectorAll('.nav-links a')[3])">Let's Work Together →</a>
         </div>
@@ -741,8 +244,8 @@
     <div class="footer-left"><p>© 2026 <span>Sumanth's Portfolio</span>. All rights reserved.</p></div>
     <div class="footer-links">
       <a href="https://twitter.com" target="_blank">Twitter</a>
-      <a href="https://www.linkedin.com/in/sai-sumanth-949761352" target="_blank" class="social-btn">LinkedIn</a>
-      <a href="https://github.com/SaiSumanthNaidu" target="_blank" class="social-btn">GitHub</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
     </div>
   </footer>
 </div>
@@ -807,6 +310,12 @@
         <div class="sbar-track"><div class="sbar-fill" style="width:75%;animation-delay:.7s"></div></div>
         <div class="skill-pct">75%</div>
       </div>
+      <div class="skill-tile">
+        <h3>Django & Flask</h3>
+        <p>Backend web frameworks for full-stack apps — used in CyberThreatProfiler (Django) and Resume Builder Pro (Flask)</p>
+        <div class="sbar-track"><div class="sbar-fill" style="width:72%;animation-delay:.8s"></div></div>
+        <div class="skill-pct">72%</div>
+      </div>
     </div>
 
     <!-- PROJECTS -->
@@ -864,6 +373,24 @@
         <a href="https://github.com/SaiSumanthNaidu/resume-builder-pro" target="_blank" class="proj-link">View on GitHub →</a>
       </div>
 
+      <!-- Project 5: CyberThreatProfiler -->
+      <div class="proj-card">
+        <div class="proj-badge-wrap">
+          <span class="proj-badge">Cybersecurity</span>
+          <span class="proj-arrow">↗</span>
+        </div>
+        <h3>CyberThreatProfiler</h3>
+        <p>A full-stack cybersecurity threat intelligence platform built with Django and Python. Features an NLP engine to analyze and profile cyber threats, a real-time dashboard, threat feed collector, alerts system, and user account management.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">Django</span>
+          <span class="proj-tag">NLP</span>
+          <span class="proj-tag">HTML5</span>
+          <span class="proj-tag">CSS3</span>
+        </div>
+        <a href="https://github.com/SaiSumanthNaidu/CyberThreatProfiler" target="_blank" class="proj-link">View on GitHub →</a>
+      </div>
+
       <!-- Project 4: WeatherSphere Pro -->
       <div class="proj-card">
         <div class="proj-badge-wrap">
@@ -896,8 +423,8 @@
     <div class="footer-left"><p>© 2026 <span>Sumanth's Portfolio</span>. All rights reserved.</p></div>
     <div class="footer-links">
       <a href="https://twitter.com" target="_blank">Twitter</a>
-      <a href="https://www.linkedin.com/in/sai-sumanth-949761352" target="_blank" class="social-btn">LinkedIn</a>
-      <a href="https://github.com/SaiSumanthNaidu" target="_blank" class="social-btn">GitHub</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
     </div>
   </footer>
 </div>
@@ -921,21 +448,21 @@
           <div class="cmethod-icon">📧</div>
           <div class="cmethod-info">
             <h4>Email</h4>
-            <a href="mailto:bandarusaisumanth@gmail.com">bandarusaisumanth@gmail.com</a>
+            <a href="mailto:sumanth@example.com">sumanth@example.com</a>
           </div>
         </div>
         <div class="cmethod">
           <div class="cmethod-icon">📱</div>
           <div class="cmethod-info">
             <h4>Phone</h4>
-            <a href="tel:+91 9154912059">+91 9154912059</a>
+            <a href="tel:+1234567890">+1 (234) 567-8900</a>
           </div>
         </div>
         <div class="cmethod">
           <div class="cmethod-icon">📍</div>
           <div class="cmethod-info">
             <h4>Location</h4>
-            <p>Hyderabad, India</p>
+            <p>Your City, Your Country</p>
           </div>
         </div>
         <div class="cmethod">
@@ -944,8 +471,8 @@
             <h4>Social Media</h4>
             <div class="social-row">
               <a href="https://twitter.com" target="_blank" class="social-btn">Twitter</a>
-              <a href="https://www.linkedin.com/in/sai-sumanth-949761352" target="_blank" class="social-btn">LinkedIn</a>
-              <a href="https://github.com/SaiSumanthNaidu" target="_blank" class="social-btn">GitHub</a>
+              <a href="https://linkedin.com" target="_blank" class="social-btn">LinkedIn</a>
+              <a href="https://github.com" target="_blank" class="social-btn">GitHub</a>
             </div>
           </div>
         </div>
@@ -995,8 +522,8 @@
     <div class="footer-left"><p>© 2026 <span>Sumanth's Portfolio</span>. All rights reserved.</p></div>
     <div class="footer-links">
       <a href="https://twitter.com" target="_blank">Twitter</a>
-      <a href="https://www.linkedin.com/in/sai-sumanth-949761352" target="_blank" class="social-btn">LinkedIn</a>
-      <a href="https://github.com/SaiSumanthNaidu" target="_blank" class="social-btn">GitHub</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
     </div>
   </footer>
 </div>
